@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio::FloMatthew</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .error {
+         color: red;
+         font-size: 0.8rem;
+         margin-top: 0.25rem;
+
+      }
+    </style>
+<body class="bg-blue-50">
+   <div class="flex w-10/12 mx-auto justify-between bg-gray-3000">
+      <div class="text-2xl font-bold bg-blue-400 rounded-full p-2">
+         FloMatthew Wahome
+      </div>
+      <div class="p-2">
+         <a class="p-2 text-l" href="#home">Home</a>
+         <a class="p-2 text-l" href="#about">About</a>
+         <a class="p-2 text-l" href="#projects">Projects</a>
+         <a class="p-2 text-l" href="#contact">Contact</a>
+     </div>
+
+   </div>
+   
+
+   <div class="p-4">
+      <div class="w-10/12 mx-auto p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+           
+         <div class="flex items-center justify-center h-48 mb-4 rounded bg-blue-400">
+              <header class=" text-white text-center bg-[url('/images/images')]">
+                <div class="text-center p-4" >
+                    <h1 class="text-5xl font-bold mb-4">Welcome to my Portfolio</h1>
+                    <p class="text-xl mt-4"> I'm a passionate Web Dev</p>
+        
+                </div>
+               </header>
+         </div>
+           <div class="grid grid-cols-2 gap-4 mb-4">
+              <div class="items-center mx-auto justify-center rounded  bg-blue-400">
+                 <div class="text-black-400  dark:text-black-500 p-4 ">
+                    <h2 class="text-xl font-bold p-"> About Me</h2>
+                    <p class="mb-4"> I am a web developer with a passion for creating beautiful and functinal websites</p>
+                </div>
+              </div>
+              <div class="items-center justify-center rounded  bg-blue-400">
+               
+                 <h2 class="text-xl text-blue-400 font bold pl-2">Skills.  </h2>
+                 <ul class="text-sm">
+                     <li class=" p-2">HTML </li>
+                     <li class=" p-2"> CSS</li>
+                     <li class=" p-2">JavaScript</li>
+                     <li class="p-2">Tailwind CSS  </li>
+                </ul>
+              </div>
+              
+           </div>
+           <div class="flex items-center justify-center h-28 mb-4 rounded bg-gray-50 bg-white">
+              <p class="text-4xl text-black-400 font-bold text-black">Projects</p>
+           </div>
+           <div class="grid grid-cols-2 gap-4">
+              <div class="items-center justify-center rounded bg-gray-50 h-48 dark:bg-gray-800 p-4 bg-red-600 text-white">
+                <h3 class="text-xl font-bold">Personal Portfolio</h3>
+                <p class="mb-4">This is my first project. I have created a personal portfolio website to showcase my skills, projects, and achievements. It includes sections such as About Me, Skills, Projects, and Contact. </p>
+                <a href="index.html" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded inline-block" >View Project</a>
+              </div>
+              <div class="items-center justify-center rounded bg-gray-50 h-48 dark:bg-gray-800 p-4 bg-red-500 text-white">
+                <h3 class="text-xl font-bold">Product Landing Page</h3>
+                <p class="mb-4">This is my Second project. I have created a Design a landing page for a product or service. Include sections like a hero banner, features, testimonials, pricing, and a call-to-action </p>
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-blue py-2 px-4 rounded inline-block" >View Project</a>
+              </div>
+              <div class="items-center justify-center rounded bg-gray-50 h-48 dark:bg-gray-800 p-4 bg-red-600 text-white">
+                <h3 class="text-xl font-bold">Recipe Blog</h3>
+                <p class="mb-4">This is my third project. I have created a Build a recipe blog where you can share your favorite recipes. Include sections for recipe cards with images, ingredients, and instructions.  </p>
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-blue py-2 px-4 rounded inline-block" >View Project</a>
+              </div>
+              <div class="items-center justify-center rounded bg-gray-50 h-48 dark:bg-gray-800 p-4 bg-red-600 text-white">
+                <h3 class="text-xl font-bold">Simple E-commerce Store</h3>
+                <p class="mb-4">This is my fourth project. I have created a Create a basic online store layout with product listings, product details pages, and a shopping cart.  </p>
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-blue py-2 px-4 rounded inline-block" >View Project</a>
+              </div>
+           </div>
+           <div>
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <form id="contactForm">
+                <div class="mb-4">
+                    <label for="name" class="block font-bold">Name</label>
+                    <input type="text" id="name" class="w-full border border-blue-300 rounded p-2" required>
+                    <span id="nameError" class="error"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block font-bold">Email</label>
+                    <input type="email" id="email" class="w-full border border-blue-300 rounded p-2" required>
+                    <span id="emailError" class="emailError"></span>
+                </div>
+                <div class="mb-4">
+                  <label for="phone" class="block font-bold">Phone</label>
+                  <input type="tel" id="phone" name="phone" class="w-full border border-blue-300 rounded p-2" required>
+                  <span id="phoneError" class="error"></span>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block font-bold">Message</label>
+                    <textarea id="message" name="message" class="w-full border border-blue-300 rounded p-2" required></textarea>
+                    <span id="messageError" class="error"></span>
+                    
+                </div>
+                <button type="submit" class="bg-indigo-500 text-white py-2 px-4 rounded mb-4">Send Message</button>
+
+            </form>
+           </div>
+           <div>
+            <footer class="bg-blue-900 text-white text-center py-4">
+                <div class="container mx-auto px-4 ">
+                    <p> &copy; 2023 M@ Portfolio. All rights reserved.</p>
+        
+                </div>
+        
+            </footer>
+           </div>
+        </div>
+     </div>
+    
+   
+    
+</body>
+<script src="/app.js"></script>
+</html>
